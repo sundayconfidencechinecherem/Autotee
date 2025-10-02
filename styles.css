@@ -314,12 +314,15 @@ a {
     margin-bottom: 30px;
 }
 
+
 /* Services Section */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* exactly 2 columns */
+    grid-template-rows: repeat(2, auto);   /* exactly 2 rows */
     gap: 30px;
 }
+
 
 .service-card {
     background: white;
@@ -446,7 +449,7 @@ a {
 
 .founder-story {
     margin-bottom: 50px;
-    text-align: center;
+    text-align: left;
 }
 
 .founder-story h3 {
@@ -1971,7 +1974,7 @@ a {
 }
 
 .pricing-card.featured {
-    border-color: var(--accent);
+    border-color: #10b981;
     transform: scale(1.05);
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
 }
@@ -1985,7 +1988,7 @@ a {
     top: -10px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--accent);
+    background: #10b981;
     color: white;
     padding: 8px 20px;
     border-radius: 20px;
@@ -2020,13 +2023,13 @@ a {
 }
 
 .package-badge.growth {
-    background: rgba(247, 37, 133, 0.1);
-    color: var(--accent);
+    background: rgba(37, 247, 111, 0.1);
+    color: #10b981;
 }
 
 .package-badge.enterprise {
-    background: rgba(16, 185, 129, 0.1);
-    color: #10b981;
+    background: rgba(22, 16, 185, 0.1);
+    color: var(--primary)
 }
 
 .card-header h3 {
@@ -2152,14 +2155,15 @@ a {
 }
 
 .btn-package.featured {
-    background: var(--accent);
+    background: #10b981;
     color: white;
 }
 
 .btn-package.featured:hover {
-    background: #e11574;
+    background: #fff;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(247, 37, 133, 0.3);
+    color: #10b981;
+    box-shadow: 0 8px 20px rgba(37, 247, 128, 0.3);
 }
 
 .support {
@@ -2309,3 +2313,4 @@ a {
         font-size: 2.5rem;
     }
 }
+

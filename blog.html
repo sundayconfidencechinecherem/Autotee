@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automation Insights - TeeAutoflow Blog</title>
+    <title>Autonify</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="blog.css">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Blog Header -->
+    <!-- Header Section -->
     <header class="header">
-        <div class="container">
-            <div class="nav-container">
-                <div class="logo">
-                    <a href="index.html">TeeAutoflow</a>
+        <div class="header__container">
+            <div class="header__nav-container">
+                <div class="header__logo">
+                    <a href="index.html#home">
+                        <img src="assets/logo.png" alt="Autonify" class="logo-img">
+                    </a>
                 </div>
-                <nav class="nav-menu">
+                <nav class="header__nav-menu">
                     <ul>
-                        
                         <li><a href="index.html#about">About</a></li>
                         <li><a href="index.html#services">Services</a></li>
                         <li><a href="index.html#client-results">Case Studies</a></li>
-                        <li><a href="blog.html" class="active">Blog</a></li>
+                        <li><a href="#blog">Blog</a></li>
                         <li><a href="index.html#contact">Contact</a></li>
                     </ul>
                 </nav>
-               
-                <div class="mobile-menu-toggle">
+                
+                <div class="header__mobile-menu-toggle">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -39,145 +43,127 @@
     <!-- Blog Hero -->
     <section class="blog-hero">
         <div class="container">
-            <div class="blog-hero-content">
+            <div class="blog-hero__content">
                 <h1>Automation Insights & Resources</h1>
                 <p>Expert advice, tutorials, and industry insights to help you scale smarter with AI and workflow automation</p>
-                <div class="blog-categories">
-                    <button class="category-filter active" data-category="all">All Articles</button>
-                    <button class="category-filter" data-category="ai">AI</button>
-                    <button class="category-filter" data-category="automation">Automation</button>
-                    <button class="category-filter" data-category="industry">Industry Insights</button>
-                    <button class="category-filter" data-category="tutorials">Tutorials</button>
+                <div class="blog-hero__categories">
+                    <button class="blog-hero__category active" data-category="all">All Articles</button>
+                    <button class="blog-hero__category" data-category="ai">AI</button>
+                    <button class="blog-hero__category" data-category="automation">Automation</button>
+                    <button class="blog-hero__category" data-category="industry">Industry Insights</button>
+                    <button class="blog-hero__category" data-category="tutorials">Tutorials</button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Featured Post -->
-    <section class="featured-post">
-        <div class="container">
-            <div class="featured-badge">
-                <i class="fas fa-star"></i>
-                Featured Article
-            </div>
-            <div class="featured-content">
-                <div class="featured-text">
-                    <span class="post-category">AI</span>
-                    <h2>How AI is Transforming Customer Support in 2025</h2>
-                    <p class="post-excerpt">Explore the latest AI advancements that are revolutionizing customer service and how to implement them in your business for maximum efficiency and customer satisfaction.</p>
-                    <div class="post-meta">
-                        <div class="author-info">
-                            <div class="author-avatar">
-                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" alt="Alex Chen">
-                            </div>
-                            <div class="author-details">
-                                <span class="author-name">Alex Chen</span>
-                                <span class="post-date">March 15, 2025 • 8 min read</span>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="btn btn-primary read-featured">Read Full Article</a>
-                </div>
-                <div class="featured-image">
-                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="AI Transforming Customer Support">
-                </div>
-            </div>
-        </div>
-    </section>
+   <!-- Featured Post -->
+<section class="featured-post">
+    <!-- Content will be loaded dynamically from blog.js -->
+</section>
 
     <!-- Blog Posts Grid -->
-    <section class="blog-posts-section">
+    <section class="blog-posts">
         <div class="container">
-            <div class="section-header">
+            <div class="blog-posts__header">
                 <h2>Latest Articles</h2>
-                <div class="view-controls">
-                    <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i></button>
-                    <button class="view-btn" data-view="list"><i class="fas fa-list"></i></button>
+                <div class="blog-posts__controls">
+                    <button class="blog-posts__view-btn active" data-view="grid">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button class="blog-posts__view-btn" data-view="list">
+                        <i class="fas fa-list"></i>
+                    </button>
                 </div>
             </div>
 
-            <div class="blog-posts-grid" id="postsContainer">
-                <!-- Posts will be loaded dynamically via JavaScript -->
+            <div class="blog-posts__grid" id="postsContainer">
+                <!-- Posts loaded dynamically -->
             </div>
 
-            <div class="load-more-container">
+            <div class="blog-posts__load-more">
                 <button id="loadMoreBtn" class="btn btn-outline">Load More Articles</button>
             </div>
         </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section class="blog-newsletter">
-        <div class="container">
-            <div class="newsletter-content">
-                <div class="newsletter-text">
-                    <h2>Get Automation Tips Straight to Your Inbox</h2>
-                    <p>Join 5,000+ professionals who receive our weekly automation insights and strategies</p>
-                </div>
-                <form class="newsletter-form">
-                    <div class="form-group">
-                        <input type="email" placeholder="Your email address" required>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
+    <!-- Footer -->
+     <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <div class="footer-heading">
+                        <img src="./assets/foot-logo.png" alt="logo">
                     </div>
-                    <p class="form-note">No spam. Unsubscribe at any time.</p>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Footer -->
-    <footer class="blog-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>TeeAutoflow</h3>
                     <p>Scale smarter with AI and workflow automation solutions.</p>
-                    <div class="social-links">
+                    <div class="footer__social-links">
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="footer-section">
-                    <h4>Blog Categories</h4>
+                <div class="footer__section">
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#">AI & Machine Learning</a></li>
-                        <li><a href="#">Workflow Automation</a></li>
-                        <li><a href="#">Industry Insights</a></li>
-                        <li><a href="#">Tutorials & How-Tos</a></li>
-                        <li><a href="#">Case Studies</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#">Automation Checklist</a></li>
-                        <li><a href="#">Free Tools</a></li>
-                        <li><a href="#">eBooks & Guides</a></li>
-                        <li><a href="#">Webinars</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
                         <li><a href="index.html#services">Services</a></li>
-                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="#blog">Blog</a></li>
                         <li><a href="index.html#contact">Contact</a></li>
                     </ul>
                 </div>
+                <div class="footer__section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Workflow Automation</a></li>
+                        <li><a href="#">AI Integration</a></li>
+                        <li><a href="#">CRM Setup</a></li>
+                        <li><a href="#">Industry Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Newsletter</h4>
+                    <p>Get automation tips straight to your inbox.</p>
+                    <form class="footer__newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="footer__btn footer__btn--primary">Subscribe</button>
+                    </form>
+                </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 TeeAutoflow. All rights reserved.</p>
-                <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Autonify All rights reserved. </p>
+                <div class="footer__legal-links">
+                   <p class="bws">Built by <a href="https://www.blockwavesoftware.com" target="_blank">Blockwavesoftware.com</a></p>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- AI Chatbot Widget -->
+    <div class="chatbot-widget">
+        <div class="chatbot-widget__icon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="chatbot-widget__modal">
+            <div class="chatbot-widget__header">
+                <h3>Automation Assistant</h3>
+                <span class="chatbot-widget__close">&times;</span>
+            </div>
+            <div class="chatbot-widget__messages">
+                <div class="chatbot-widget__message chatbot-widget__bot-message">
+                    <p>Hi! I'm your automation assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chatbot-widget__input">
+                <input type="text" placeholder="Ask about automation...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="blogData.js"></script>
     <script src="blog.js"></script>
 </body>
 </html>

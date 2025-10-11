@@ -3,150 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article - TeeAutoflow Blog</title>
+    <title>Article - Autonify</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="blog.css">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .article-hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 120px 0 60px;
-        }
-        
-        .article-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .article-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        
-        .article-category {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            padding: 8px 20px;
-            border-radius: 30px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-            backdrop-filter: blur(10px);
-        }
-        
-        .article-title {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            line-height: 1.3;
-        }
-        
-        .article-meta {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-        
-        .author-info {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        
-        .author-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            overflow: hidden;
-        }
-        
-        .author-avatar img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .article-content {
-            padding: 60px 0;
-            background: white;
-        }
-        
-        .article-body {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #333;
-        }
-        
-        .article-body h2 {
-            font-size: 1.8rem;
-            margin: 40px 0 20px;
-            color: var(--primary);
-        }
-        
-        .article-body h3 {
-            font-size: 1.4rem;
-            margin: 30px 0 15px;
-            color: var(--secondary);
-        }
-        
-        .article-body p {
-            margin-bottom: 20px;
-        }
-        
-        .article-image {
-            margin: 40px 0;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .article-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        .back-to-blog {
-            text-align: center;
-            margin-top: 50px;
-        }
-        
-        @media (max-width: 768px) {
-            .article-title {
-                font-size: 2rem;
-            }
-            
-            .article-meta {
-                flex-direction: column;
-                gap: 15px;
-            }
-        }
-    </style>
 </head>
 <body>
-    <!-- Blog Header -->
+    <!-- Header Section -->
     <header class="header">
-        <div class="container">
-            <div class="nav-container">
-                <div class="logo">
-                    <a href="index.html">TeeAutoflow</a>
+        <div class="header__container">
+            <div class="header__nav-container">
+                <div class="header__logo">
+                    <a href="index.html#home">
+                        <img src="assets/logo.png" alt="Autonify" class="logo-img">
+                    </a>
                 </div>
-                <nav class="nav-menu">
+                <nav class="header__nav-menu">
                     <ul>
-                        
                         <li><a href="index.html#about">About</a></li>
                         <li><a href="index.html#services">Services</a></li>
                         <li><a href="index.html#client-results">Case Studies</a></li>
-                        <li><a href="blog.html" class="active">Blog</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="index.html#contact">Contact</a></li>
                     </ul>
                 </nav>
-               
-                <div class="mobile-menu-toggle">
+                
+                <div class="header__mobile-menu-toggle">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -155,115 +40,87 @@
         </div>
     </header>
 
-    <!-- Article Hero -->
-    <section class="article-hero">
-        <div class="article-container">
-            <div class="article-header">
-                <span class="article-category" id="articleCategory">AI</span>
-                <h1 id="articleTitle">How AI is Transforming Customer Support in 2025</h1>
-                <div class="article-meta">
-                    <div class="author-info">
-                        <div class="author-avatar">
-                            <img id="authorAvatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" alt="Author">
-                        </div>
-                        <div class="author-details">
-                            <span class="author-name" id="authorName">Alex Chen</span>
-                            <span class="post-date" id="articleDate">March 15, 2025 • 8 min read</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Article Content -->
-    <section class="article-content">
-        <div class="article-container">
-            <div class="article-image">
-                <img id="articleImage" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Article Image">
-            </div>
-            <div class="article-body" id="articleContent">
-                <!-- Content will be loaded dynamically -->
-            </div>
-            <div class="back-to-blog">
-                <a href="blog.html" class="btn btn-primary">
-                    <i class="fas fa-arrow-left"></i> Back to Blog
-                </a>
-            </div>
-        </div>
-    </section>
+    <article class="article" id="articleContent">
+        <!-- Content will be loaded dynamically -->
+    </article>
 
-    <!-- Blog Footer -->
-    <footer class="blog-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>TeeAutoflow</h3>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <div class="footer-heading">
+                        <img src="./assets/foot-logo.png" alt="logo">
+                    </div>
                     <p>Scale smarter with AI and workflow automation solutions.</p>
-                    <div class="social-links">
+                    <div class="footer__social-links">
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="footer-section">
-                    <h4>Blog Categories</h4>
+                <div class="footer__section">
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="blog.html?category=ai">AI & Machine Learning</a></li>
-                        <li><a href="blog.html?category=automation">Workflow Automation</a></li>
-                        <li><a href="blog.html?category=industry">Industry Insights</a></li>
-                        <li><a href="blog.html?category=tutorials">Tutorials & How-Tos</a></li>
-                        <li><a href="blog.html">Case Studies</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#">Automation Checklist</a></li>
-                        <li><a href="#">Free Tools</a></li>
-                        <li><a href="#">eBooks & Guides</a></li>
-                        <li><a href="#">Webinars</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
                         <li><a href="index.html#services">Services</a></li>
-                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="index.html#contact">Contact</a></li>
                     </ul>
                 </div>
+                <div class="footer__section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Workflow Automation</a></li>
+                        <li><a href="#">AI Integration</a></li>
+                        <li><a href="#">CRM Setup</a></li>
+                        <li><a href="#">Industry Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Newsletter</h4>
+                    <p>Get automation tips straight to your inbox.</p>
+                    <form class="footer__newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="footer__btn footer__btn--primary">Subscribe</button>
+                    </form>
+                </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 TeeAutoflow. All rights reserved.</p>
-                <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Autonify All rights reserved.</p>
+                <div class="footer__legal-links">
+                   <p class="bws">Built by <a href="https://www.blockwavesoftware.com" target="_blank">Blockwavesoftware.com</a></p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Load article content
-        document.addEventListener('DOMContentLoaded', function() {
-            const articleData = JSON.parse(sessionStorage.getItem('currentArticle'));
-            
-            if (articleData) {
-                document.getElementById('articleCategory').textContent = articleData.category;
-                document.getElementById('articleTitle').textContent = articleData.title;
-                document.getElementById('authorAvatar').src = articleData.author.avatar;
-                document.getElementById('authorName').textContent = articleData.author.name;
-                document.getElementById('articleDate').textContent = `${articleData.date} • ${articleData.readTime}`;
-                document.getElementById('articleImage').src = articleData.image;
-                document.getElementById('articleContent').innerHTML = articleData.fullContent;
-            } else {
-                // If no article data, redirect to blog
-                window.location.href = 'blog.html';
-            }
-        });
-    </script>
+    <!-- AI Chatbot Widget -->
+    <div class="chatbot-widget">
+        <div class="chatbot-widget__icon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="chatbot-widget__modal">
+            <div class="chatbot-widget__header">
+                <h3>Automation Assistant</h3>
+                <span class="chatbot-widget__close">&times;</span>
+            </div>
+            <div class="chatbot-widget__messages">
+                <div class="chatbot-widget__message chatbot-widget__bot-message">
+                    <p>Hi! I'm your automation assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chatbot-widget__input">
+                <input type="text" placeholder="Ask about automation...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="blogData.js"></script>
+    <script src="article.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TeeAutoflow - Scale Smarter with AI + Workflow Automation</title>
+    <title>Autonify</title>
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="hero.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="service.css">
     <link rel="stylesheet" href="client.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="footer.css">
@@ -22,7 +23,9 @@
         <div class="header__container">
             <div class="header__nav-container">
                 <div class="header__logo">
-                    <a href="#home">TeeAutoflow</a>
+                    <a href="#home">
+                        <img src="assets/logo.png" alt="Autonify" class="logo-img">
+                    </a>
                 </div>
                 <nav class="header__nav-menu">
                     <ul>
@@ -48,10 +51,10 @@
         <div class="hero__container">
             <div class="hero__content-wrapper">
                 <div class="hero__content">
-                    <h1 class="hero__title">Scale Smarter with AI + Workflow Automation</h1>
-                    <p class="hero__description">We help businesses save time, cut costs, and unlock growth through intelligent automation solutions.</p>
+                    <h1 class="hero__title">How To Save 20+ Hours a Week, Without Hiring More Staff.</h1>
+                    <p class="hero__description">Autonify helps businesses automate repetitive work, eliminate human errors, and scale faster with smart AI + automation systems.</p>
                     <div class="hero__buttons">
-                        <a href="#contact" class="hero__btn hero__btn--primary">Book a Free Consultation</a>
+                        <a href="#contact" class="hero__btn hero__btn--primary">Get Started</a>
                     </div>
                 </div>
                 <div class="hero__video">
@@ -80,23 +83,14 @@
         <div class="about__container">
             <div class="about__content-wrapper">
                 <div class="about__content">
-                    <h1 class="about__title">About TeeAutoflow</h1>
+                    <h1 class="about__title">About Autonify</h1>
                     <div class="about__founder-story">
-                        <p class="about__lead">Founded in 2020, TeeAutoflow began when our founder noticed businesses struggling with repetitive tasks that technology could easily automate.</p>
-                        <p class="about__read-more-content">We've since grown into a team of certified automation experts passionate about eliminating manual work and helping businesses scale smarter through intelligent automation solutions.</p>
+                        <p class="about__lead">Autonify was founded with a simple mission, to help businesses eliminate repetitive work and unlock their true potential through automation and AI.</p>
+                        <p class="about__read-more-content"> After years of seeing teams waste time on manual processes, we decided to build systems that handle the busy work, so businesses can focus on growth. We've since grown into a team of certified automation experts passionate about eliminating manual work and helping businesses scale smarter through intelligent automation solutions.</p>
                         
                         <!-- This content will be hidden by default and shown when "Read More" is clicked -->
                         <div class="about__read-more-content about__additional-content">
-                            <div class="about__mission-vision">
-                                <div class="about__mission">
-                                    <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
-                                    <p>To help businesses work smarter by eliminating repetitive tasks and empowering teams with AI + automation.</p>
-                                </div>
-                                <div class="about__vision">
-                                    <h3><i class="fas fa-eye"></i> Our Vision</h3>
-                                    <p>A world where businesses focus on growth while automation handles the routine work.</p>
-                                </div>
-                            </div>
+                         
                             
                             <div class="about__stats">
                                 <div class="about__stat">
@@ -122,11 +116,23 @@
                 </div>
                 <div class="about__image">
                     <div class="about__image-container">
-                        <img src="./image/automation.jpg" alt="TeeAutoflow Team - Automation Experts" loading="lazy">
+                        <img src="./image/automation.jpg" alt="Autonify Team - Automation Experts" loading="lazy">
                         <div class="about__image-overlay">
                             <div class="about__overlay-content">
                                 <i class="fas fa-play-circle"></i>
                                 <span>Our Automation Journey</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__read-more-content about__additional-content">
+                        <div class="about__mission-vision">
+                            <div class="about__mission">
+                                <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                                <p>To help businesses work smarter by eliminating repetitive tasks and empowering teams with AI + automation.</p>
+                            </div>
+                            <div class="about__vision">
+                                <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                                <p>A world where businesses focus on growth while automation handles the routine work.</p>
                             </div>
                         </div>
                     </div>
@@ -136,211 +142,205 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <section  class="services">
         <div class="services__container">
             <div class="services__section-header">
-                <h2>Our Services</h2>
-                <p class="services__section-subtitle">Streamline your operations with our specialized automation solutions</p>
+                <div class="services-header">
+                    <h2 class="services-main-headline">Still Doing Everything Manually? <span class="gradient-text">That's Costing You Time & Money</span></h2>
+                    <p class="services-subheadline">Discover how automation can transform your business operations</p>
+                </div>
             </div>
-            <div class="services__grid">
-                <div class="services__card">
-                    <div class="services__icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 6V3L8 7L12 11V8C15.31 8 18 10.69 18 14C18 17.31 15.31 20 12 20C8.69 20 6 17.31 6 14H4C4 18.42 7.58 22 12 22C16.42 22 20 18.42 20 14C20 9.58 16.42 6 12 6Z" fill="#2563eb"/>
-                        </svg>
+            <div class="services-content">
+                <div class="problem-solution-section">
+                    <div class="problem-column">
+                        <h3 class="problem-title">Common Business Challenges</h3>
+                        <div class="pain-points-grid">
+                            <div class="pain-point-card">
+                                <div class="pain-point-header">
+                                    <h4>Manual Data Entry</h4>
+                                </div>
+                                <p class="pain-point-text">Endless repetitive admin tasks wasting valuable hours</p>
+                                <div class="pain-point-stats">
+                                    <span class="stat-badge">15-20 hrs/week</span>
+                                </div>
+                            </div>
+                            
+                            <div class="pain-point-card">
+                                <div class="pain-point-header">
+                                    <h4>Disconnected Tools</h4>
+                                </div>
+                                <p class="pain-point-text">Systems that don't talk to each other causing delays</p>
+                                <div class="pain-point-stats">
+                                    <span class="stat-badge">40% slower</span>
+                                </div>
+                            </div>
+                            
+                            <div class="pain-point-card">
+                                <div class="pain-point-header">
+                                    <h4>Missed Opportunities</h4>
+                                </div>
+                                <p class="pain-point-text">Slow response times leading to lost leads and revenue</p>
+                                <div class="pain-point-stats">
+                                    <span class="stat-badge">23% loss</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Workflow Automation</h3>
-                    <p class="services__tools">Zapier, Make, Airtable, Google Suite</p>
-                    <p class="services__description">Automate lead capture, CRM integration, and email follow-up processes to save time and reduce manual work.</p>
-                    <a href="#" class="services__btn-link">Learn more</a>
+    
+                    <div class="solution-column">
+                        <div class="solution-card">
+                            <div class="solution-badge">The Autonify Solution</div>
+                            <h3 class="solution-title">Transform Your Business with Smart Automation</h3>
+                            <p class="solution-text">We design and build automated systems that connect your tools, streamline workflows, and give your team back valuable time, so you can focus on scaling, not spreadsheets.</p>
+                            
+                            <div class="solution-benefits">
+                                <div class="benefit-item">
+                                    <span>Save 15-30 hours weekly</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <span>Reduce errors by 80%</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <span>Scale without hiring</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <span>Improve customer response time</span>
+                                </div>
+                            </div>
+                            
+                            <button class="cta-btn-primary solution-cta" id="solution-cta">
+                                <span>Book a Free Automation Audit</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="services__card">
-                    <div class="services__icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 2H5C3.9 2 3 2.9 3 4V16C3 17.1 3.9 18 5 18H10V20H8V22H16V20H14V18H19C20.1 18 21 17.1 21 16V4C21 2.9 20.1 2 19 2ZM19 16H5V4H19V16Z" fill="#2563eb"/>
-                            <path d="M11.25 15L12.75 13.5L11.25 12V15ZM12.75 10.5L11.25 9V12L12.75 10.5ZM7 12H10V14H7V12ZM15 12H18V14H15V12Z" fill="#2563eb"/>
-                        </svg>
+    
+                <!-- Services Overview -->
+                <div id="services" class="services-overview-section">
+                    <div class="services-intro">
+                        <h2 class="services-title">Our Automation Services</h2>
+                        <p class="services-description">We combine process strategy, automation, CRM and AI integration to help businesses scale efficiently.</p>
                     </div>
-                    <h3>AI Integration</h3>
-                    <p class="services__tools">AI chatbots, assistants, GPT-powered workflows</p>
-                    <p class="services__description">Implement intelligent automation for customer support, content generation, and data analysis tasks.</p>
-                    <a href="#" class="services__btn-link">Learn more</a>
-                </div>
-                <div class="services__card">
-                    <div class="services__icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19Z" fill="#2563eb"/>
-                            <path d="M7 12H17V14H7V12ZM7 16H17V18H7V16ZM7 8H17V10H7V8Z" fill="#2563eb"/>
-                        </svg>
+    
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-card-header">
+                                <div class="service-badge">Most Popular</div>
+                            </div>
+                            <h3 class="service-title">Workflow Automation</h3>
+                            <p class="service-description">Automate daily operations across your entire business to save time and reduce errors.</p>
+                            
+                            <div class="service-features">
+                                <span class="feature-tag">Zapier</span>
+                                <span class="feature-tag">Make</span>
+                                <span class="feature-tag">n8n</span>
+                            </div>
+                            
+                            <div class="service-stats">
+                                <div class="stat">
+                                    <span class="stat-number">15-30</span>
+                                    <span class="stat-label">hours saved/week</span>
+                                </div>
+                            </div>
+                            
+                            <button class="service-cta" data-service="workflow">
+                                Learn More <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+    
+                        <div class="service-card">
+                            <div class="service-card-header">
+                                <div class="service-badge trending">Trending</div>
+                            </div>
+                            <h3 class="service-title">AI Integration</h3>
+                            <p class="service-description">Implement GPT-powered assistants and chatbots that handle customer inquiries instantly.</p>
+                            
+                            <div class="service-features">
+                                <span class="feature-tag">OpenAI</span>
+                                <span class="feature-tag">Chatbots</span>
+                                <span class="feature-tag">AI Assistants</span>
+                            </div>
+                            
+                            <div class="service-stats">
+                                <div class="stat">
+                                    <span class="stat-number">60%</span>
+                                    <span class="stat-label">faster responses</span>
+                                </div>
+                            </div>
+                            
+                            <button class="service-cta" data-service="ai">
+                                Learn More <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+    
+                        <div class="service-card">
+                            <div class="service-card-header">
+                            </div>
+                            <h3 class="service-title">CRM Setup & Optimization</h3>
+                            <p class="service-description">Automate sales pipelines, reminders, and client follow-up sequences for maximum efficiency.</p>
+                            
+                            <div class="service-features">
+                                <span class="feature-tag">HubSpot</span>
+                                <span class="feature-tag">ClickUp</span>
+                                <span class="feature-tag">Monday.com</span>
+                            </div>
+                            
+                            <div class="service-stats">
+                                <div class="stat">
+                                    <span class="stat-number">3x</span>
+                                    <span class="stat-label">more follow-ups</span>
+                                </div>
+                            </div>
+                            
+                            <button class="service-cta" data-service="crm">
+                                Learn More <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+    
+                        <div class="service-card">
+                            <div class="service-card-header">
+                            </div>
+                            <h3 class="service-title">Data Integration</h3>
+                            <p class="service-description">Connect all your apps and tools seamlessly to eliminate manual imports and duplicates.</p>
+                            
+                            <div class="service-features">
+                                <span class="feature-tag">API Integration</span>
+                                <span class="feature-tag">Data Sync</span>
+                                <span class="feature-tag">Migration</span>
+                            </div>
+                            
+                            <div class="service-stats">
+                                <div class="stat">
+                                    <span class="stat-number">100%</span>
+                                    <span class="stat-label">data accuracy</span>
+                                </div>
+                            </div>
+                            
+                            <button class="service-cta" data-service="data">
+                                Learn More <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
                     </div>
-                    <h3>CRM Setup & Optimization</h3>
-                    <p class="services__tools">HubSpot, Monday.com, Zoho, ClickUp</p>
-                    <p class="services__description">Configure and optimize CRM systems with automated sales pipelines, reminders, and reporting.</p>
-                    <a href="#" class="services__btn-link">Learn more</a>
-                </div>
-                <div class="services__card">
-                    <div class="services__icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19Z" fill="#2563eb"/>
-                            <path d="M8.5 15H10.5V9H7V10.5H8.5V15ZM13.5 15H15C15.55 15 16 14.55 16 14V10C16 9.45 15.55 9 15 9H13.5C12.95 9 12.5 9.45 12.5 10V14C12.5 14.55 12.95 15 13.5 15ZM14 10.5H14.5V13.5H14V10.5ZM17.5 15H19V9H17.5V10.5H16.5V11.5H17.5V13H16.5V14H17.5V15Z" fill="#2563eb"/>
-                        </svg>
+    
+                    <div class="services-cta-section">
+                        <div class="cta-content">
+                            <h3>Ready to Transform Your Business?</h3>
+                            <p>Get started with a free automation audit and discover how much time you can save.</p>
+                        </div>
+                        <button class="cta-btn-secondary services-main-cta" id="services-main-cta">
+                            Claim Free Audit
+                        </button>
                     </div>
-                    <h3>Industry Solutions</h3>
-                    <p class="services__tools">Real estate, law firms, e-commerce, logistics</p>
-                    <p class="services__description">Pre-packaged automation solutions tailored to the specific needs of your industry.</p>
-                    <a href="#" class="services__btn-link">Learn more</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing">
-        <div class="pricing__container">
-            <div class="pricing__section-header">
-                <h2>Choose Your Automation Package</h2>
-                <p>Scalable solutions for businesses of all sizes. Start small, grow big.</p>
-            </div>
     
-            <div class="pricing__cards">
-                <!-- Starter Package -->
-                <div class="pricing__card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="pricing__card-header">
-                        <div class="pricing__package-badge pricing__package-badge--starter">Starter</div>
-                        <h3>Essential Automation</h3>
-                        <p class="pricing__price-note">Perfect for small businesses starting their automation journey</p>
-                    </div>
-                    
-                    <div class="pricing__card-features">
-                        <div class="pricing__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Up to 5 automated workflows</span>
-                        </div>
-                        <div class="pricing__feature">
-                            <i class="fas fa-check"></i>
-                            <span>2 app integrations (Zapier/Make)</span>
-                        </div>
-                        <div class="pricing__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Basic email automation</span>
-                        </div>
-                        <div class="pricing__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Data entry automation</span>
-                        </div>
-                        <div class="pricing__feature">
-                            <i class="fas fa-check"></i>
-                            <span>2-hour setup & training</span>
-                        </div>
-                        <div class="pricing__feature pricing__feature--disabled">
-                            <i class="fas fa-times"></i>
-                            <span>AI-powered workflows</span>
-                        </div>
-                        <div class="pricing__feature pricing__feature--disabled">
-                            <i class="fas fa-times"></i>
-                            <span>Advanced analytics</span>
-                        </div>
-                    </div>
     
-                    <div class="pricing__card-footer">
-                        <button class="pricing__btn-package" data-package="starter">Get Started</button>
-                        <p class="pricing__support">Email support only</p>
-                    </div>
-                </div>
-    
-                <!-- Growth Package (Featured) -->
-                <div class="pricing__card pricing__card--featured" data-aos="fade-up" data-aos-delay="200">
-                    <div class="pricing__popular-badge">Most Popular</div>
-                    <div class="pricing__card-header">
-                        <div class="pricing__package-badge pricing__package-badge--growth">Growth</div>
-                        <h3>Advanced Workflows</h3>
-                        <p class="pricing__price-note">Ideal for growing businesses scaling operations</p>
-                    </div>
-                    
-                    <div class="pricing__card-features">
-                        <div class="pricing__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Up to 15 automated workflows</span>
-                        </div>
-                        <div class="pricing__feature">
-                            <i class="fas fa-check"></i>
-                            <span>5 app integrations</span>
-                        </div>
-                        <div class="pricing__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Multi-channel automation</span>
-                        </div>
-                        <div class="pricing__feature">
-                            <i class="fas fa-check"></i>
-                            <span>CRM integration</span>
-                        </div>
-                        <div class="pricing__feature">
-                            <i class="fas fa-check"></i>
-                            <span>4-hour setup & training</span>
-                        </div>
-                        <div class="pricing__feature">
-                            <i class="fas fa-check"></i>
-                            <span>AI-powered workflows</span>
-                        </div>
-                        <div class="pricing__feature pricing__feature--disabled">
-                            <i class="fas fa-times"></i>
-                            <span>Custom dashboard</span>
-                        </div>
-                    </div>
-    
-                    <div class="pricing__card-footer">
-                        <button class="pricing__btn-package pricing__btn-package--featured" data-package="growth">Start Growing</button>
-                        <p class="pricing__support">Priority email & chat support</p>
-                    </div>
-                </div>
-    
-                <!-- Enterprise Package -->
-                <div class="pricing__card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="pricing__card-header">
-                        <div class="pricing__package-badge pricing__package-badge--enterprise">Enterprise</div>
-                        <h3>Complete Automation</h3>
-                        <p class="pricing__price-note">For established businesses needing comprehensive automation</p>
-                    </div>
-                    
-                    <div class="pricing__card-features">
-                        <div class="pricing__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Unlimited workflows</span>
-                        </div>
-                        <div class="pricing__feature">
-                            <i class="fas fa-check"></i>
-                            <span>10+ app integrations</span>
-                        </div>
-                        <div class="pricing__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Custom API development</span>
-                        </div>
-                        <div class="pricing__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Advanced AI automation</span>
-                        </div>
-                        <div class="pricing__feature">
-                            <i class="fas fa-check"></i>
-                            <span>8-hour setup & training</span>
-                        </div>
-                        <div class="pricing__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Custom dashboard & analytics</span>
-                        </div>
-                        <div class="pricing__feature">
-                            <i class="fas fa-check"></i>
-                            <span>Dedicated automation manager</span>
-                        </div>
-                    </div>
-    
-                    <div class="pricing__card-footer">
-                        <button class="pricing__btn-package" data-package="enterprise">Contact Sales</button>
-                        <p class="pricing__support">24/7 phone & dedicated support</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            
+               
 
     <!-- Case Studies Section -->
     <section id="client-results" class="client-results">
@@ -388,7 +388,7 @@
                     
                     <div class="client-results__testimonial">
                         <blockquote>
-                            "TeeAutoflow completely transformed our client onboarding process. What used to take days with multiple team members now happens automatically in just hours! Our team can now focus on building relationships instead of paperwork."
+                            "Autonify completely transformed our client onboarding process. What used to take days with multiple team members now happens automatically in just hours! Our team can now focus on building relationships instead of paperwork."
                         </blockquote>
                     </div>
                     
@@ -437,7 +437,7 @@
                     
                     <div class="client-results__testimonial">
                         <blockquote>
-                            "The automation system TeeAutoflow built handles hundreds of orders daily with zero errors. What used to require 3 team members now runs automatically. Our team can finally focus on growth instead of fighting fires."
+                            "The automation system Autonify built handles hundreds of orders daily with zero errors. What used to require 3 team members now runs automatically"
                         </blockquote>
                     </div>
                     
@@ -459,7 +459,7 @@
     <!-- Why Choose Us Section -->
     <section class="why-choose-us">
         <div class="why-choose-us__container">
-            <h2 class="why-choose-us__title">Why Businesses Trust TeeAutoflow</h2>
+            <h2 class="why-choose-us__title">Why Businesses Trust Autonify</h2>
             <div class="why-choose-us__value-props">
                 <div class="why-choose-us__value-prop">
                     <i class="fas fa-award"></i>
@@ -615,7 +615,7 @@
                         <h3>Contact Details</h3>
                         <div class="contact__method">
                             <i class="fas fa-envelope"></i>
-                            <span>hello@teeautoflow.com</span>
+                            <span>autonify.com</span>
                         </div>
                         <div class="contact__method">
                             <i class="fab fa-whatsapp"></i>
@@ -623,7 +623,7 @@
                         </div>
                         <div class="contact__method">
                             <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn: TeeAutoflow</span>
+                            <span>LinkedIn: autonify</span>
                         </div>
                     </div>
                 </div>
@@ -636,7 +636,9 @@
         <div class="footer__container">
             <div class="footer__content">
                 <div class="footer__section">
-                    <h3>TeeAutoflow</h3>
+                    <div class="footer-heading">
+                        <img src="./assets/foot-logo.png" alt="logo">
+                    </div>
                     <p>Scale smarter with AI and workflow automation solutions.</p>
                     <div class="footer__social-links">
                         <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -648,11 +650,9 @@
                 <div class="footer__section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#case-studies">Case Studies</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -675,10 +675,9 @@
                 </div>
             </div>
             <div class="footer__bottom">
-                <p>&copy; 2025 TeeAutoflow. All rights reserved. | Built by <a>Blockwavesoftware.com</a></p>
+                <p>&copy; 2025 Autonify All rights reserved. </p>
                 <div class="footer__legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
+                   <p class="bws">Built by <a href="https://www.blockwavesoftware.com" target="_blank">Blockwavesoftware.com</a></p>
                 </div>
             </div>
         </div>

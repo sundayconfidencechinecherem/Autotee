@@ -528,3 +528,20 @@
         display: none;
     }
 }
+
+.bws {
+    color: var(--secondary);
+}
+.bws a{
+    color: var(--secondary);
+}
+.bws a:hover {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-heading img {
+    height: 110px;
+    width: auto;
+    margin-bottom: 1.5rem;
+}

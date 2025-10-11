@@ -251,3 +251,9 @@ body {
         padding-top: 70px;
     }
 }
+
+/* SVG Logo Styles */
+.logo-img {
+    height: 35px;
+    width: auto;
+}
